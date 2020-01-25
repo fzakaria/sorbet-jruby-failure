@@ -1,29 +1,13 @@
 PATH
-  remote: ../looker-reporters
-  specs:
-    looker-reporters (1.LATEST)
-      ansi (~> 1.5)
-      minitest (~> 5.13)
-      minitest-reporters (= 1.4.2)
-
-PATH
   remote: .
   specs:
-    demo (1.LATEST)
+    demo (1.0)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    ansi (1.5.0)
-    builder (3.2.4)
     minitest (5.13.0)
-    minitest-reporters (1.4.2)
-      ansi
-      builder
-      minitest (>= 5.0)
-      ruby-progressbar
     rake (10.4.2)
-    ruby-progressbar (1.10.1)
 
 PLATFORMS
   java
@@ -32,9 +16,11 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 2.0)
   demo!
-  looker-reporters!
   minitest (~> 5.13)
   rake (~> 10.0)
 
+RUBY VERSION
+   ruby 2.3.3p0 (jruby 9.1.17.0)
+
 BUNDLED WITH
-   2.0.2
+   2.1.4
