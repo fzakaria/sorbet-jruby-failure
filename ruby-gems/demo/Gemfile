@@ -1,0 +1,6 @@
+ruby '2.3.3', engine: 'jruby', engine_version: '9.1.17.0'
+
+source "https://rubygems.org"
+
+# Specify your gem's dependencies in demo.gemspec
+gemspec
