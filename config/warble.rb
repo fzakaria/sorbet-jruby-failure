@@ -9,10 +9,10 @@ Warbler::Config.new do |config|
   # - *executable*: embed a web server and make the war executable
   # - *runnable*: allows to run bin scripts e.g. `java -jar my.war -S rake -T`
   # - *compiled*: compile .rb files to .class files
-  # config.features = %w(gemjar)
+  config.features = %w(compiled)
 
   # Application directories to be included in the webapp.
-  # config.dirs = %w(app config db lib log script vendor tmp)
+  config.dirs = %w(bin lib)
 
   # Additional files/directories to include, above those in config.dirs
   # config.includes = FileList["db"]
@@ -98,18 +98,18 @@ Warbler::Config.new do |config|
 
   # Determines if ruby files in supporting gems will be compiled.
   # Ignored unless compile feature is used.
-  # config.compile_gems = false
+  config.compile_gems = false
 
   # When set it specify the bytecode version for compiled class files
-  # config.bytecode_version = "1.6"
+  config.bytecode_version = "1.8"
 
   # When set to true, Warbler will override the value of ENV['GEM_HOME'] even it
   # has already been set. When set to false it will use any existing value of
   # GEM_HOME if it is set.
-  # config.override_gem_home = true
+  config.override_gem_home = true
 
   # Allows for specifing custom executables
-  # config.executable = ["rake", "bin/rake"]
+  config.executable = "bin/warbler-example.rb"
 
   # Sets default (prefixed) parameters for the executables
   # config.executable_params = "do:something"
