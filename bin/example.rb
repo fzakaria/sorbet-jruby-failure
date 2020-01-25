@@ -9,30 +9,22 @@ module Test
 
     sig {params(a: T.untyped).void}
     def initialize(a)
-      @a = T.let(a, T.untyped)
-    end
-
-    def hello_world
-      puts "Hello world"
+      @a = a
     end
 
   end
 end
 
-#a = Test::A.new(1)
-#a.hello_world
 
 def run
-  a ||= Class.new(Test::A) do
-
-    def hello_world
-      puts "Hello world"
-    end
-
-  end.new(self)
-
-  a.hello_world
+  c = Class.new(Test::A)
+  a ||= c.new(self)
 end
 
+threads = []
+(1..50).each do |i|
+  threads << Thread.new { run }
+end
 
-run
+threads.each {|thread| thread.join }
+
