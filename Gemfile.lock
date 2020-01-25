@@ -1,3 +1,8 @@
+PATH
+  remote: ruby-gems/demo
+  specs:
+    demo (1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -16,6 +21,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  demo!
   jruby-jars (= 9.1.17.0)
   warbler
 
