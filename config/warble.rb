@@ -12,7 +12,7 @@ Warbler::Config.new do |config|
   config.features = %w(compiled)
 
   # Application directories to be included in the webapp.
-  config.dirs = %w(bin lib)
+  config.dirs = %w(bin)
 
   # Additional files/directories to include, above those in config.dirs
   # config.includes = FileList["db"]
@@ -27,7 +27,7 @@ Warbler::Config.new do |config|
   # config.java_libs += FileList["lib/java/*.jar"]
 
   # Loose Java classes and miscellaneous files to be included.
-  # config.java_classes = FileList["target/classes/**.*"]
+  #config.java_classes = %w[CustomJarMain.class]
 
   # One or more pathmaps defining how the java classes should be copied into
   # the archive. The example pathmap below accompanies the java_classes
@@ -89,7 +89,7 @@ Warbler::Config.new do |config|
 
   # Name of the MANIFEST.MF template for the war file. Defaults to a simple
   # MANIFEST.MF that contains the version of Warbler used to create the war file.
-  # config.manifest_file = "config/MANIFEST.MF"
+  #config.manifest_file = "MANIFEST.MF"
 
   # When using the 'compiled' feature and specified, only these Ruby
   # files will be compiled. Default is to compile all \.rb files in
