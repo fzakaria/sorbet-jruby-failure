@@ -5,7 +5,7 @@
 ```
 bundle exec warble
 
-java -jar sorbet-jruby-example.jar
+java -jar warbler-example.jar
 ```
 
 ### Environment
