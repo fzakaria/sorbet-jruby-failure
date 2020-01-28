@@ -3,6 +3,6 @@ require "bundler/setup"
 
 puts "Starting the JAR!"
 
-require 'demo'
+#require 'demo'
 
-puts Demo.hello_world
+#puts Demo.hello_world
