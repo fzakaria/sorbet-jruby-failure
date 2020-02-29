@@ -42,7 +42,7 @@ Gem::Specification.new do |spec|
   # Development dependencies aren't installed by default and aren't
   # activated when a gem is required.
   spec.add_development_dependency "bundler", "~> 2.0"
-  spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "rake", "~> 12.3"
   spec.add_development_dependency "minitest", "~> 5.13"
 
 end
