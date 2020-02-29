@@ -7,7 +7,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     minitest (5.13.0)
-    rake (10.4.2)
+    rake (12.3.3)
 
 PLATFORMS
   java
@@ -17,7 +17,7 @@ DEPENDENCIES
   bundler (~> 2.0)
   demo!
   minitest (~> 5.13)
-  rake (~> 10.0)
+  rake (~> 12.3)
 
 RUBY VERSION
    ruby 2.3.3p0 (jruby 9.1.17.0)
