@@ -1,12 +1,7 @@
-PATH
-  remote: ruby-gems/demo
-  specs:
-    demo (1.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
-    jruby-jars (9.1.17.0)
+    jruby-jars (9.2.9.0)
     jruby-rack (1.1.21)
     rake (13.0.1)
     rubyzip (1.3.0)
@@ -21,12 +16,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  demo!
-  jruby-jars (= 9.1.17.0)
+  jruby-jars (= 9.2.9.0)
   warbler (= 2.0.5)
 
 RUBY VERSION
-   ruby 2.3.3p0 (jruby 9.1.17.0)
+   ruby 2.5.7p0 (jruby 9.2.9.0)
 
 BUNDLED WITH
    2.1.4
